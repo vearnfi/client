@@ -176,7 +176,7 @@ function createStore() {
 
         const { wConnex, account } = data;
 
-        return wConnex.signTx(clauses, account, comment);
+        return wConnex.signTx({clauses, signer: account, comment});
       } catch (error: unknown) {
         store.update((s) => ({
           ...s,

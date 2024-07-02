@@ -35,4 +35,3 @@ src/report.html
 
 # Environment variables
 .env
-.env.localhost
